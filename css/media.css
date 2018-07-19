@@ -1,4 +1,4 @@
-@media all and (max-width:768px){
+@media all and (max-width:1024px){
     aside{
         grid-column: 1/2;
         margin-left: 0px;
