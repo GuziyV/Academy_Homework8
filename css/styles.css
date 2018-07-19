@@ -1,0 +1,60 @@
+
+
+body{
+    margin: 50px;
+}
+
+header{
+    background-color: beige;
+    display: grid;
+    grid-template-columns: 25% 55% 20%;
+}
+
+
+.header-logo{
+    grid-column: 1/2;
+    grid-row: 1/4;
+}
+
+.header-social{
+    grid-column: 3/4;
+    grid-row: 1/1;
+    justify-items: end;
+}
+
+.header-search{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.header-nav{
+    grid-column: 2/4;
+    grid-row:3/4;
+    justify-self: end;
+}
+
+#logo{
+    height: 75%;
+    width: 75%;
+}
+
+.icon{
+    margin: 10px;
+    width: 8%;
+    height: 8%;
+}
+
+.nav-elem{
+    padding: 10px;
+    background-color: greenyellow;
+    margin-right: 10px;
+}
+
+
+.header-social input[type=text] {
+    font-size: 13px;
+    border: 1px solid grey;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
