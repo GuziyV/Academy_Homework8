@@ -36,6 +36,8 @@ main{
 
 .header-social{
     grid-column: 3/4;
+    justify-self: end;
+    align-self: end;
 }
 
 .header-search{
@@ -47,8 +49,10 @@ main{
     grid-column: 2/4;
     grid-row:3/4;
     justify-self: end;
+    align-self: end;
     display: flex;
-    margin-bottom: 13px;
+    margin-bottom: 15px;
+    
 }
 
 #logo{
@@ -59,7 +63,8 @@ main{
 .icon{
     margin: 10px;
     width: 8%;
-    height: 8%;
+    max-width: 100%;
+    height: auto;
 }
 
 .nav-elem{
@@ -69,6 +74,10 @@ main{
     margin-right: 10px;
     display: flex;
     border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    justify-self: end;
+    align-self: end;
 }
 
 .nav-elem:hover{
@@ -86,6 +95,7 @@ main{
 
 .main-card{
     border: solid 1px #dedede;
+    padding: 10px;
 }
 
 .main-card:hover img{
@@ -124,7 +134,7 @@ aside{
     width: 80%;
     height: auto;
     grid-column: 1/3;
-    place-self: center;
+    align-self: center;
     justify-self: center;
 }
 
