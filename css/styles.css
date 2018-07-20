@@ -3,13 +3,14 @@
     margin-left: auto;
     margin-right: auto;
     margin-top:50px;
-    margin-bottom: 50px;
     display: grid;
     grid-template-columns: 65% 35%;
     grid-gap: 10px 10px;
 }
 
-
+body{
+    margin-bottom: 0px;
+}
 header{
     background: url(images/rhcp.jpg) no-repeat;
     background-size: 100%;
@@ -127,6 +128,7 @@ input[type=text] {
 
 aside{
     grid-column: 2/3;
+    grid-row: 2/4;
     display: grid;
     background-color: beige;
     padding: 5px;
@@ -194,10 +196,6 @@ aside{
     grid-column: 1/3;
 }
 
-.aside-comments{
-    grid-column: 1/3;
-    border: solid 1px grey;
-}
 
 .aside-comment-photo{
     grid-column: 1/2;
@@ -214,4 +212,29 @@ aside{
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+footer{
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 75% auto;
+    background-color: grey;
+    color: black;
+    grid-gap: 20px;
+}
+
+
+
+footer .icon{
+    width: 5%;
+    margin: 0;
+}
+
+.footer-info{
+    grid-column: 1/2;
+}
+
+.footer-contacts{
+    grid-column: 2/3;
+    overflow: auto;
 }
