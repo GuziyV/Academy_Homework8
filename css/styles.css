@@ -5,9 +5,10 @@
     margin-top:50px;
     margin-bottom: 50px;
     display: grid;
-    grid-template-columns: 75% 25%;
+    grid-template-columns: 65% 35%;
     grid-gap: 10px 10px;
 }
+
 
 header{
     background: url(images/rhcp.jpg) no-repeat;
@@ -43,6 +44,11 @@ main{
 .header-search{
     grid-column: 3/4;
     grid-row: 2/3;
+}
+
+.header-search .icon{
+    width: 10%;
+    margin-left: 130px;
 }
 
 .header-nav{
@@ -85,7 +91,7 @@ main{
     color: white;
 }
 
-.header-social input[type=text] {
+input[type=text] {
     font-size: 13px;
     border: 1px solid grey;
     width: 80%;
@@ -96,7 +102,9 @@ main{
 .main-card{
     border: solid 1px #dedede;
     padding: 10px;
+    max-height: 300px;
 }
+
 
 .main-card:hover img{
     transition: 1s;
@@ -121,33 +129,89 @@ aside{
     grid-column: 2/3;
     display: grid;
     background-color: beige;
+    padding: 5px;
     grid-gap: 15px 15px;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 125px 225px;
     border: solid 2px #dedede;
-    grid-template-rows: 180px 150px 100px
+    grid-template-rows: 180px 150px 25px 180px 30px 
 }
 
 
 .aside-photo{
 
     max-width: 100%;
-    width: 80%;
+    width: 70%;
     height: auto;
     grid-column: 1/3;
     align-self: center;
-    justify-self: center;
+    margin-left: 50px;
 }
 
 .aside-info{
     grid-column: 1/3;
-    padding-right: 15px;
 }
 
 .aside-social{
     grid-column: 1/3;   
 }
 
+.aside-social .icon{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
 .aside-social img{
+    grid-column: 1/3;
     max-width: 100%;
     height: auto;
+}
+
+.aside-subscribe{
+    grid-column: 1/3;
+}
+.aside-subscribe-button{
+    width: 100%;
+    background-color: green;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: wheat;
+}
+
+.aside-search{
+    width: 100%;
+    grid-column: 1/3;
+}
+.aside-search-input{
+    margin-bottom: 10px;
+}
+
+.aside-search-button{
+    background: url(images/search.png) no-repeat;
+    background-size: 100%;
+}
+
+.aside-tags{
+    grid-column: 1/3;
+}
+
+.aside-comments{
+    grid-column: 1/3;
+    border: solid 1px grey;
+}
+
+.aside-comment-photo{
+    grid-column: 1/2;
+    width: 60%;
+    height: auto;
+    justify-self: center;
+}
+
+.aside-comment{
+    grid-column: 2/3;
+}
+
+.aside-comment-body{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }

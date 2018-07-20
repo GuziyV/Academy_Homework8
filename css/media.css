@@ -2,6 +2,6 @@
     aside{
         grid-column: 1/2;
         margin-left: 0px;
-        margin-right: 150px;
+        justify-content: center;
     }
 }
