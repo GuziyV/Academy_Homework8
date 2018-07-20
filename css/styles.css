@@ -1,0 +1,239 @@
+.page-wrapper{
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:50px;
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-gap: 10px 10px;
+}
+
+body{
+    margin-bottom: 0px;
+}
+header{
+    background: url(images/rhcp.jpg) no-repeat;
+    background-size: 100%;
+    display: grid;
+    grid-template-columns: 25% 55% 20%;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+
+main{
+    grid-column: 1/2;
+    background-color: beige;
+    display: grid;
+    grid-template-columns:  repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 10px 10px;
+}
+
+.header-logo{
+    grid-column: 1/2;
+    grid-row: 1/4;
+}
+
+.header-social{
+    grid-column: 3/4;
+    justify-self: end;
+    align-self: end;
+}
+
+.header-search{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+.header-search .icon{
+    width: 10%;
+    margin-left: 130px;
+}
+
+.header-nav{
+    grid-column: 2/4;
+    grid-row:3/4;
+    justify-self: end;
+    align-self: end;
+    display: flex;
+    margin-bottom: 15px;
+    
+}
+
+#logo{
+    height: 75%;
+    width: 75%;
+}
+
+.icon{
+    margin: 10px;
+    width: 8%;
+    max-width: 100%;
+    height: auto;
+}
+
+.nav-elem{
+    font-size: 115%;
+    padding: 10px;
+    background-color: rgb(204, 204, 255);
+    margin-right: 10px;
+    display: flex;
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    justify-self: end;
+    align-self: end;
+}
+
+.nav-elem:hover{
+    background-color: black;
+    color: white;
+}
+
+input[type=text] {
+    font-size: 13px;
+    border: 1px solid grey;
+    width: 80%;
+    background: #f1f1f1;
+  }
+  
+
+.main-card{
+    border: solid 1px #dedede;
+    padding: 10px;
+    max-height: 300px;
+}
+
+
+.main-card:hover img{
+    transition: 1s;
+    width: 60%;
+}
+
+.main-card-photo{
+    width: 33%;
+    float: left;
+    margin: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.main-card-date{
+    font-size: 75%;
+    color: grey;
+    
+}
+
+aside{
+    grid-column: 2/3;
+    grid-row: 2/4;
+    display: grid;
+    background-color: beige;
+    padding: 5px;
+    grid-gap: 15px 15px;
+    grid-template-columns: 125px 225px;
+    border: solid 2px #dedede;
+    grid-template-rows: 180px 150px 25px 180px 30px 
+}
+
+
+.aside-photo{
+
+    max-width: 100%;
+    width: 70%;
+    height: auto;
+    grid-column: 1/3;
+    align-self: center;
+    margin-left: 50px;
+}
+
+.aside-info{
+    grid-column: 1/3;
+}
+
+.aside-social{
+    grid-column: 1/3;   
+}
+
+.aside-social .icon{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.aside-social img{
+    grid-column: 1/3;
+    max-width: 100%;
+    height: auto;
+}
+
+.aside-subscribe{
+    grid-column: 1/3;
+}
+.aside-subscribe-button{
+    width: 100%;
+    background-color: green;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: wheat;
+}
+
+.aside-search{
+    width: 100%;
+    grid-column: 1/3;
+}
+.aside-search-input{
+    margin-bottom: 10px;
+}
+
+.aside-search-button{
+    background: url(images/search.png) no-repeat;
+    background-size: 100%;
+}
+
+.aside-tags{
+    grid-column: 1/3;
+}
+
+
+.aside-comment-photo{
+    grid-column: 1/2;
+    width: 60%;
+    height: auto;
+    justify-self: center;
+}
+
+.aside-comment{
+    grid-column: 2/3;
+}
+
+.aside-comment-body{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+footer{
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 75% auto;
+    background-color: grey;
+    color: black;
+    grid-gap: 20px;
+}
+
+footer .icon{
+    width: 5%;
+    margin: 0;
+}
+
+.footer-info{
+    grid-column: 1/2;
+}
+
+.footer-contacts{
+    grid-column: 2/3;
+    overflow: auto;
+}
+
